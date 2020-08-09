@@ -6,13 +6,13 @@ services:
     image: bh0na/reverseproxy 
   backend_user:
     build:
-      context: ../../udacity-c3-restapi-user
+      context: ../../restapi-user
     image: bh0na/udacity-restapi-user
   backend_feed:
     build:
-      context: ../../udacity-c3-restapi-feed  
+      context: ../../restapi-feed  
     image: bh0na/udacity-restapi-feed
   frontend:
     build:
-      context: ../../udacity-c3-frontend  
+      context: ../../frontend  
     image: bh0na/udacity-frontend:local
